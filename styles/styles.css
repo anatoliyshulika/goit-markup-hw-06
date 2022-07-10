@@ -341,8 +341,6 @@ img {
 }
 
 .order-label {
-  position: relative;
-
   display: block;
   height: 58px;
   margin-bottom: 10px;
@@ -354,6 +352,10 @@ img {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
+}
+
+.input-container {
+  position: relative;
 }
 
 .order-input {
@@ -373,7 +375,8 @@ img {
 .input-icon {
   position: absolute;
   left: 12px;
-  bottom: 9px;
+  top: 50%;
+  transform: translateY(-50%);
 
   fill: var(--second-text-title-color);
   transition: fill var(--timing-function);
